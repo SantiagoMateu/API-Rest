@@ -45,28 +45,28 @@ Response
 
 
 [POST]://console.firebase.google.com/negocio/bibloteca
-
 Request
 
-{
+header
+
+body: {
 "Autor": "Michal Witkowski",
 "Categoria": "Categorías / 2",
 "Libro": "el leñador",
 "Precio": 23000,
 "Stock": true
-}
+      }
 
 Response
 
 "ID 2": {
-{
+
     "Autor": "Michal Witkowski",
     "Categoria": "Categorías / 2",
     "Libro": "el leñador",
     "Precio": 23000,
-    "Stock": true,
-    "createdAt": "2024-08-17T18:52:22.798Z"
-}
+    "Stock": true
+        }
 
 
 [PUT]https://console.firebase.google.com/negocio/bibloteca/2
@@ -79,7 +79,7 @@ Request
     "Libro": "Star Wars: Tormenta Creciente",
     "Precio": 30000,
     "Stock": true
-},
+        }
 
 Response
 
@@ -89,7 +89,7 @@ Response
     "Libro": "Star Wars: Tormenta Creciente",
     "Precio": 30000,
     "Stock": true
-},
+        }
 
 
 [DELETE]https://console.firebase.google.com/negocio/bibloteca/3
@@ -102,4 +102,4 @@ Borra esto
     "Libro": "Si no amaneciera",
     "Precio": 12000,
     "Stock": true
-},
+        }
