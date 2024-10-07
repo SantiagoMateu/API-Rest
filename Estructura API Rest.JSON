@@ -1,0 +1,105 @@
+METODOS
+
+GET
+POST
+PUT
+DELETE
+
+
+[GET]https://console.firebase.google.com/negocio/bibloteca
+
+Response
+
+"bibloteca":[
+[
+    "ID 1": {
+        "Autor": "John Kennedy Toole",
+        "Categoria": "Categorías / 2",
+        "Libro": "La conjura de los necios",
+        "Precio": 14000,
+        "Stock": true
+    },
+    "ID 2": {
+        "Autor": "Cavan Scott",
+        "Categoria": "Categorías / 1",
+        "Libro": "Star Wars: Tormenta Creciente",
+        "Precio": 20000,
+        "Stock": true
+    },
+    "ID 3": {
+        "Autor": "Ayanta Barilli",
+        "Categoría": "Categorías / 3",
+        "Libro": "Si no amaneciera",
+        "Precio": 12000,
+        "Stock": true
+    },
+    "ID 4": {
+        "Autor": "Felipe Pigna",
+        "Categoria": "Categorías / 4",
+        "Libro": "Los Guemes",
+        "Precio": 24000,
+        "Stock": true
+    }
+]
+         ]
+
+
+[POST]://console.firebase.google.com/negocio/bibloteca
+
+Request
+
+{
+"Autor": "Michal Witkowski",
+"Categoria": "Categorías / 2",
+"Libro": "el leñador",
+"Precio": 23000,
+"Stock": true
+}
+
+Response
+
+"ID 2": {
+{
+    "Autor": "Michal Witkowski",
+    "Categoria": "Categorías / 2",
+    "Libro": "el leñador",
+    "Precio": 23000,
+    "Stock": true,
+    "createdAt": "2024-08-17T18:52:22.798Z"
+}
+
+
+[PUT]https://console.firebase.google.com/negocio/bibloteca/2
+
+Request
+
+"ID 2": {
+    "Autor": "Cavan Scott",
+    "Categoria": "Categorías / 1",
+    "Libro": "Star Wars: Tormenta Creciente",
+    "Precio": 30000,
+    "Stock": true
+},
+
+Response
+
+"ID 2": {
+    "Autor": "Cavan Scott",
+    "Categoria": "Categorías / 1",
+    "Libro": "Star Wars: Tormenta Creciente",
+    "Precio": 30000,
+    "Stock": true
+},
+
+
+[DELETE]https://console.firebase.google.com/negocio/bibloteca/3
+
+Borra esto
+
+"ID 3": {
+    "Autor": "Ayanta Barilli",
+    "Categoría": "Categorías / 3",
+    "Libro": "Si no amaneciera",
+    "Precio": 12000,
+    "Stock": true
+},
